@@ -66,12 +66,11 @@ article {
   font-family: var(--bodyFont) !important;
 }
 
-/* Site Title (in header/sidebar) */
-.page-title {
-  font-size: 1.25rem !important; 
+.page-title a {
+  font-size: 1.75rem !important; 
+  color: var(--dark) !important;
 }
 
-/* Article Page Title (h1 at top of note) */
 .article-title {
   font-size: 2.75rem !important;
 }
@@ -84,4 +83,23 @@ article {
   h4 { font-size: 1.15rem; }
   h5 { font-size: 1.0rem; }
   h6 { font-size: 0.9rem; }
+}
+
+html, 
+body {
+  background-color: var(--light) !important;
+}
+
+div.sidebar {
+  background-color: var(--lightgray) !important;
+}
+
+div.page-header,
+article,
+footer {
+  padding: 0 1.75rem !important;
+}
+
+div.graph {
+  h3 { font-size: 1.75rem; }
 }
