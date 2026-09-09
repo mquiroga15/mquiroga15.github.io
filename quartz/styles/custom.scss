@@ -2,7 +2,7 @@
 
 // put your custom CSS here!
 
-// --- Regular (400 Normal) ---
+// Mazius Display (Regular & Italic, 2 weights)
 @font-face {
   font-family: 'Mazius Display';
   src: url('/static/fonts/MaziusDisplay-Regular.woff2') format('woff2');
@@ -11,7 +11,6 @@
   font-display: swap;
 }
 
-// --- Bold (700 Normal) ---
 @font-face {
   font-family: 'Mazius Display';
   src: url('/static/fonts/MaziusDisplay-Bold.woff2') format('woff2');
@@ -20,7 +19,6 @@
   font-display: swap;
 }
 
-// --- Extra Italic Regular (400 Italic) ---
 @font-face {
   font-family: 'Mazius Display';
   src: url('/static/fonts/MaziusDisplay-Extraitalic.woff2') format('woff2');
@@ -29,7 +27,6 @@
   font-display: swap;
 }
 
-// --- Extra Italic Bold (700 Italic) ---
 @font-face {
   font-family: 'Mazius Display';
   src: url('/static/fonts/MaziusDisplay-ExtraItalicBold.woff2') format('woff2');
@@ -38,3 +35,53 @@
   font-display: swap;
 }
 
+// Cascadia Code Nerd Font (Regular & Italic, variable)
+@font-face {
+  font-family: 'Cascadia Code NF';
+  src: url('/static/fonts/CascadiaCodeNF.woff2') format('woff2-variations'),
+       url('/static/fonts/CascadiaCodeNF.woff2') format('woff2');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code NF';
+  src: url('/static/fonts/CascadiaCodeNF-Italic.woff2') format('woff2-variations'),
+       url('/static/fonts/CascadiaCodeNF-Italic.woff2') format('woff2');
+  font-weight: 200 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --bodyFont: 'Cascadia Code NF', monospace;
+}
+/* Force all article text, paragraphs, lists, and markdown bodies to apply the font */
+body, 
+p, 
+li, 
+span, 
+article {
+  font-family: var(--bodyFont) !important;
+}
+
+/* Site Title (in header/sidebar) */
+.page-title {
+  font-size: 1.25rem !important; 
+}
+
+/* Article Page Title (h1 at top of note) */
+.article-title {
+  font-size: 2.75rem !important;
+}
+
+.popover-hint, 
+article {
+  h1 { font-size: 2.0rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.3rem; }
+  h4 { font-size: 1.15rem; }
+  h5 { font-size: 1.0rem; }
+  h6 { font-size: 0.9rem; }
+}
