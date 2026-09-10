@@ -57,6 +57,12 @@
 // @quartz-themes/core does some weird things with the colours and the result is
 // that editing the values inside quartz.config.yaml does not work. This is a
 // workaround. These are the actual values displayed in the page.
+
+// Get that ugly semi-transparent background out of my sight.
+.internal.internal-link {
+  background-color: transparent;
+}
+
 :root,
 :root[saved-theme="light"] {
   --light: #faf8f8;
