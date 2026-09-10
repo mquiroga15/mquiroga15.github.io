@@ -19,6 +19,9 @@ configuration:
       header: Mazius Display
       body: Cascadia Code NF
       code: Cascadia Code NF
+    # @quartz-themes/core does some weird things with the colours and the result
+    # is that editing the values inside quartz.config.yaml does not work. The 
+    # workaround is inside quartz/styles/custom.scss. Edit the colours there.
     colors:
       lightMode:
         light: "#faf8f8"
@@ -111,14 +114,18 @@ plugins:
   - source: "@quartz-community/quartz-fonts"
     enabled: true
     options:
+      useThemeFonts: false
+      fontOrigin: local
       header: Mazius Display
       body: Cascadia Code NF
       code: Cascadia Code NF
+      interface: Cascadia Code NF
   - source: "@quartz-themes/core"
-    enabled: false
+    enabled: true
     options:
       theme: default
       mode: both
+      themeFonts: false
   - source: "@quartz-community/remove-draft"
     enabled: true
   - source: "@quartz-community/explicit-publish"

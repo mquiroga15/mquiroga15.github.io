@@ -1,35 +1,33 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
-
 // Mazius Display (Regular & Italic, 2 weights)
 @font-face {
-  font-family: 'Mazius Display';
-  src: url('/static/fonts/MaziusDisplay-Regular.woff2') format('woff2');
+  font-family: "Mazius Display";
+  src: url("/static/fonts/MaziusDisplay-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Mazius Display';
-  src: url('/static/fonts/MaziusDisplay-Bold.woff2') format('woff2');
+  font-family: "Mazius Display";
+  src: url("/static/fonts/MaziusDisplay-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Mazius Display';
-  src: url('/static/fonts/MaziusDisplay-Extraitalic.woff2') format('woff2');
+  font-family: "Mazius Display";
+  src: url("/static/fonts/MaziusDisplay-Extraitalic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Mazius Display';
-  src: url('/static/fonts/MaziusDisplay-ExtraItalicBold.woff2') format('woff2');
+  font-family: "Mazius Display";
+  src: url("/static/fonts/MaziusDisplay-ExtraItalicBold.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -37,69 +35,83 @@
 
 // Cascadia Code Nerd Font (Regular & Italic, variable)
 @font-face {
-  font-family: 'Cascadia Code NF';
-  src: url('/static/fonts/CascadiaCodeNF.woff2') format('woff2-variations'),
-       url('/static/fonts/CascadiaCodeNF.woff2') format('woff2');
+  font-family: "Cascadia Code NF";
+  src:
+    url("/static/fonts/CascadiaCodeNF.woff2") format("woff2-variations"),
+    url("/static/fonts/CascadiaCodeNF.woff2") format("woff2");
   font-weight: 200 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Cascadia Code NF';
-  src: url('/static/fonts/CascadiaCodeNF-Italic.woff2') format('woff2-variations'),
-       url('/static/fonts/CascadiaCodeNF-Italic.woff2') format('woff2');
+  font-family: "Cascadia Code NF";
+  src:
+    url("/static/fonts/CascadiaCodeNF-Italic.woff2") format("woff2-variations"),
+    url("/static/fonts/CascadiaCodeNF-Italic.woff2") format("woff2");
   font-weight: 200 700;
   font-style: italic;
   font-display: swap;
 }
 
-:root {
-  --bodyFont: 'Cascadia Code NF', monospace;
-}
-/* Force all article text, paragraphs, lists, and markdown bodies to apply the font */
-body, 
-p, 
-li, 
-span, 
-article {
-  font-family: var(--bodyFont) !important;
+// @quartz-themes/core does some weird things with the colours and the result is
+// that editing the values inside quartz.config.yaml does not work. This is a
+// workaround. These are the actual values displayed in the page.
+:root,
+:root[saved-theme="light"] {
+  --light: #faf8f8;
+  --lightgray: #e5e5e5;
+  --gray: #b8b8b8;
+  --darkgray: #4e4e4e;
+  --dark: #2b2b2b;
+  --secondary: #284b63;
+  --tertiary: #84a59d;
+  --highlight: rgba(143, 159, 169, 0);
+  --textHighlight: #fff23688;
+
+  --color-base-00: var(--light);
+  --color-base-05: var(--light);
+  --color-base-10: var(--light);
+  --color-base-20: var(--lightgray);
+  --color-base-25: var(--lightgray);
+  --color-base-30: var(--lightgray);
+  --color-base-35: var(--lightgray);
+  --color-base-40: var(--gray);
+  --color-base-50: var(--gray);
+  --color-base-60: var(--gray);
+  --color-base-70: var(--darkgray);
+  --color-base-100: var(--dark);
+  --color-accent: var(--secondary);
+  --color-accent-1: var(--secondary);
+  --color-accent-2: var(--tertiary);
+  --text-highlight-bg: var(--textHighlight);
 }
 
-.page-title a {
-  font-size: 1.75rem !important; 
-  color: var(--dark) !important;
-}
+:root[saved-theme="dark"] {
+  --light: #0f0f0f;
+  --lightgray: #1b1b1b;
+  --gray: #646464;
+  --darkgray: #d4d4d4;
+  --dark: #ebebec;
+  --secondary: #7b97aa;
+  --tertiary: #84a59d;
+  --highlight: rgba(143, 159, 169, 0);
+  --textHighlight: #b3aa0288;
 
-.article-title {
-  font-size: 2.75rem !important;
-}
-
-.popover-hint, 
-article {
-  h1 { font-size: 2.0rem; }
-  h2 { font-size: 1.6rem; }
-  h3 { font-size: 1.3rem; }
-  h4 { font-size: 1.15rem; }
-  h5 { font-size: 1.0rem; }
-  h6 { font-size: 0.9rem; }
-}
-
-html, 
-body {
-  background-color: var(--light) !important;
-}
-
-div.sidebar {
-  background-color: var(--lightgray) !important;
-}
-
-div.page-header,
-article,
-footer {
-  padding: 0 1.75rem !important;
-}
-
-div.graph {
-  h3 { font-size: 1.75rem; }
+  --color-base-00: var(--light);
+  --color-base-05: var(--light);
+  --color-base-10: var(--light);
+  --color-base-20: var(--lightgray);
+  --color-base-25: var(--lightgray);
+  --color-base-30: var(--lightgray);
+  --color-base-35: var(--lightgray);
+  --color-base-40: var(--gray);
+  --color-base-50: var(--gray);
+  --color-base-60: var(--gray);
+  --color-base-70: var(--darkgray);
+  --color-base-100: var(--dark);
+  --color-accent: var(--secondary);
+  --color-accent-1: var(--secondary);
+  --color-accent-2: var(--tertiary);
+  --text-highlight-bg: var(--textHighlight);
 }
