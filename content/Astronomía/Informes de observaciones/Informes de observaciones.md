@@ -8,6 +8,10 @@ He de admitir que muchas veces la emoción del momento sobre buscar el siguiente
 >[[M51]]
 
 >[!abstract]- NGC
+>[[2026/2026-05-14 00-05 Tripa de Leo|M95, 96, 105, NGC3338, 67, 77, 84, 89]]
+>[[NGC3165|NGC3165, 6, 9]]
+>[[NGC3242|NGC3242 Nebulosa del fantasma de Júpiter]]
+>[[NGC4631|NGC4627, 31, 56, 57 Galaxias de la ballena y palo de hockey]]
 
 >[!info]- Otros
 >
@@ -29,14 +33,15 @@ constellation: ""
 Y mi plantilla de observación es esta:
 ```
 ---
-object: ""
+object:
+  - 
 place: ""
-seeing: 4
+seeing:
 m_lim:
 telescope: "[[Skywatcher 12-inch]]"
 eyepiece_name: ""
-eyepiece_mm: 
-filter: 
+eyepiece_mm:
+filter:
 fov:
 ---
 ```
