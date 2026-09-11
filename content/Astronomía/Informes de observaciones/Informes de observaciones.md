@@ -1,6 +1,6 @@
 Aquí podrás encontrar mis memorias, comentarios, y ocasionales dibujos sobre los diferentes objetos que busco en mis salidas de observación.
 
-He de admitir que muchas veces la emoción del momento sobre buscar el siguiente objeto gana por goleada a las intenciones de anotar mis observaciones en directo y al trabajo que conlleva pasarlas a digital, así que por desgracia no es para un registro completo.
+He de admitir que muchas veces la emoción del momento sobre buscar el siguiente objeto gana por goleada a las intenciones de anotar mis observaciones en directo y al trabajo que conlleva pasarlas a digital, así que por desgracia no es un registro completo.
 
 >[!abstract]- Catálogo Messier
 >[[M4]]
