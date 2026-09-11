@@ -12,12 +12,14 @@ He de admitir que muchas veces la emoción del momento sobre buscar el siguiente
 >[[NGC3165|NGC3165, 6, 9]]
 >[[NGC3242|NGC3242 Nebulosa del fantasma de Júpiter]]
 >[[NGC4631|NGC4627, 31, 56, 57 Galaxias de la ballena y palo de hockey]]
+>[[NGC6543|NGC6543 Nebulosa del ojo de gato]]
+>[[NGC6572|NGC6572 Nebulosa Esmeralda]]
 
 >[!info]- Otros
->
+>[[Mayall II]]
 
 >[!example]- Crónicas de observación
->[[Cabañeros, 14 Mayo 2026]]
+>
 
 Mi plantilla de objeto es la siguiente:
 ```
