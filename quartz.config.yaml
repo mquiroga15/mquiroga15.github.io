@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: es-ES
   baseUrl: mquiroga15.github.io
   ignorePatterns:
     - private
@@ -297,14 +297,8 @@ layout:
         left: []
         right: []
     content: {}
-    folder:
-      exclude:
-        - reader-mode
-      positions:
-        right: []
+    folder: {}
     tag:
-      exclude:
-        - reader-mode
       positions:
         right: []
     canvas: {}
