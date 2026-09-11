@@ -180,15 +180,15 @@ plugins:
         drag: true
         zoom: true
         depth: -1
-        scale: 5
+        scale: 2
         repelForce: 0.3
         centerForce: 0.4
         linkDistance: 9
-        fontSize: 1
-        opacityScale: 1
+        fontSize: 2
+        opacityScale: 0
         removeTags: []
         showTags: true
-        enableRadial: false
+        enableRadial: true
     layout:
       position: right
       priority: 10
@@ -239,6 +239,8 @@ plugins:
       group: toolbar
   - source: "@quartz-community/breadcrumbs"
     enabled: true
+    options:
+      rootName: "Inicio"
     layout:
       position: beforeBody
       priority: 5
