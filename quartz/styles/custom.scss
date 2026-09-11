@@ -65,14 +65,14 @@
 
 :root,
 :root[saved-theme="light"] {
-  --light: #faf8f8;
-  --lightgray: #e5e5e5;
-  --gray: #b8b8b8;
-  --darkgray: #4e4e4e;
-  --dark: #2b2b2b;
-  --secondary: #284b63;
-  --tertiary: #84a59d;
-  --highlight: rgba(143, 159, 169, 0);
+  --light:         #faf8f8;
+  --lightgray:     #e5e5e5;
+  --gray:          #b8b8b8;
+  --darkgray:      #4e4e4e;
+  --dark:          #2b2b2b;
+  --secondary:     #2a2b7b;
+  --tertiary:      #2a2b7b;
+  --highlight:     #8f9fa926;
   --textHighlight: #fff23688;
 
   --color-base-00: var(--light);
@@ -94,14 +94,14 @@
 }
 
 :root[saved-theme="dark"] {
-  --light: #0f0f0f;
-  --lightgray: #1b1b1b;
-  --gray: #646464;
-  --darkgray: #d4d4d4;
-  --dark: #ebebec;
-  --secondary: #7b97aa;
-  --tertiary: #84a59d;
-  --highlight: rgba(143, 159, 169, 0);
+  --light:         #0f0f0f;
+  --lightgray:     #000000;
+  --gray:          #646464;
+  --darkgray:      #d4d4d4;
+  --dark:          #ebebec;
+  --secondary:     #ffc400;
+  --tertiary:      #ffc400;
+  --highlight:     #8f9fa926;
   --textHighlight: #b3aa0288;
 
   --color-base-00: var(--light);
@@ -122,8 +122,26 @@
   --text-highlight-bg: var(--textHighlight);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.article-title,
+.page-title,
+.page-title a {
+  font-weight: 400;
+}
+
 .article-title {
   font-size: 2.5rem;
+}
+.page-title a {
+  font-size: 1.75em;
+}
+div.graph h3 {
+  font-size: 1.75em;
 }
 
 p.content-meta {
