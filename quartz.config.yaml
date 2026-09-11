@@ -282,6 +282,15 @@ plugins:
         - description
         - tags
         - aliases
+        - object_type
+        - constellation
+        - place
+        - seeing
+        - m_lim
+        - telescope
+        - eyepiece_name
+        - eyepiece_mm
+        - fov
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---
