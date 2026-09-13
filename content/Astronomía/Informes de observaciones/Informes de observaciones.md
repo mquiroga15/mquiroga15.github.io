@@ -3,9 +3,16 @@ Aquí podrás encontrar mis memorias, comentarios, y ocasionales dibujos sobre l
 He de admitir que muchas veces la emoción del momento sobre buscar el siguiente objeto gana por goleada a las intenciones de anotar mis observaciones en directo y al trabajo que conlleva pasarlas a digital, así que por desgracia no es un registro completo.
 
 >[!abstract]- Catálogo Messier
+>[[M3]]
 >[[M4]]
+>[[M5]]
 >[[M8]]
+>[[M13]]
+>[[M31]]
+[[M32]]
+>[[M40]]
 >[[M51]]
+>[[M110]]
 
 >[!abstract]- NGC
 >[[2026/2026-05-14 00-05 Tripa de Leo|M95, 96, 105, NGC3338, 67, 77, 84, 89]]
@@ -17,6 +24,7 @@ He de admitir que muchas veces la emoción del momento sobre buscar el siguiente
 
 >[!info]- Otros
 >[[Mayall II]]
+>[[2026-09-12 21-13 ISS|ISS]]
 
 >[!example]- Crónicas de observación
 >
