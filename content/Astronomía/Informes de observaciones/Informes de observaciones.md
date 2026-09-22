@@ -18,7 +18,11 @@ He de admitir que muchas veces la emoción del momento sobre buscar el siguiente
 >[[2026/2026-05-14 00-05 Tripa de Leo|M95, 96, 105, NGC3338, 67, 77, 84, 89]]
 >[[NGC3165|NGC3165, 6, 9]]
 >[[NGC3242|NGC3242 Nebulosa del fantasma de Júpiter]]
+>[[NGC3310|NGC3310 Galaxia del arco y flecha]]
+>[[NGC4244|NGC4244 Galaxia de la aguja de plata]]
+>[[NGC4490|NGC4485, 90 Cocoon galaxy]]
 >[[NGC4631|NGC4627, 31, 56, 57 Galaxias de la ballena y palo de hockey]]
+>[[NGC5426| NGC5426, 7]]
 >[[NGC6543|NGC6543 Nebulosa del ojo de gato]]
 >[[NGC6572|NGC6572 Nebulosa Esmeralda]]
 
