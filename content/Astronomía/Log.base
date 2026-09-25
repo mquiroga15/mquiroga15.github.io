@@ -1,0 +1,44 @@
+filters:
+  or:
+    - file.folder == "Astronomía/Objetos"
+    - file.folder == "Astronomía/Equipamiento"
+    - file.folder == "Astronomía/Observaciones"
+    - file.folder == "content/Astronomía/Objetos"
+    - file.folder == "content/Astronomía/Equipamiento"
+    - file.folder == "content/Astronomía/Observaciones"
+views:
+  - type: table
+    name: Observaciones
+    filters:
+      or:
+        - file.folder == "Astronomía/Observaciones"
+        - file.folder == "content/Astronomía/Observaciones"
+    order:
+      - file.name
+      - object
+      - location
+      - telescope
+      - eyepiece
+      - magnification
+      - fov_arcmin
+  - type: table
+    name: Objetos
+    filters:
+      or:
+        - file.folder == "Astronomía/Objetos"
+        - file.folder == "content/Astronomía/Objetos"
+    order:
+      - file.name
+      - object_type
+      - constellation
+  - type: table
+    name: Equipamiento
+    filters:
+      or:
+        - file.folder == "Astronomía/Equipamiento"
+        - file.folder == "content/Astronomía/Equipamiento"
+    order:
+      - file.name
+      - type
+      - focal_length_mm
+      - afov
