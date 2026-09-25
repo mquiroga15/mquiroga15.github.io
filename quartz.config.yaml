@@ -279,21 +279,12 @@ plugins:
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
-      includeAll: false
-      includedProperties:
-        - description
-        - tags
-        - aliases
-        - object_type
-        - constellation
-        - place
-        - seeing
-        - m_lim
-        - telescope
-        - eyepiece_name
-        - eyepiece_mm
-        - fov
-      excludedProperties: []
+      includeAll: true
+      excludedProperties:
+        - title
+        - created
+        - modified
+        - published
       hidePropertiesView: false
       delimiters: ---
       language: yaml
