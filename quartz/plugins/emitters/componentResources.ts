@@ -58,7 +58,17 @@ function getComponentResources(ctx: BuildCtx): ComponentResources {
     const { css, beforeDOMLoaded, afterDOMLoaded } = component
     for (const c of normalizeResource(css)) componentResources.css.add(c)
     for (const b of normalizeResource(beforeDOMLoaded)) componentResources.beforeDOMLoaded.add(b)
-    for (const a of normalizeResource(afterDOMLoaded)) componentResources.afterDOMLoaded.add(a)
+    for (const a of normalizeResource(afterDOMLoaded)) {
+      // Graph labels are rendered above node graphics. Pixi's default text hit
+      // area can swallow pointer events meant for the node underneath.
+      const graphSafeScript = a.includes("lu.anchor.set(.5,1.2)")
+        ? a.replace(
+            "lu.anchor.set(.5,1.2)",
+            'lu.eventMode="none",lu.anchor.set(.5,1.2)',
+          )
+        : a
+      componentResources.afterDOMLoaded.add(graphSafeScript)
+    }
   }
 
   return {

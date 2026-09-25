@@ -184,10 +184,11 @@ plugins:
         repelForce: 0.3
         centerForce: 0.4
         linkDistance: 9
-        fontSize: 2
+        fontSize: 1.5
         opacityScale: 0
         removeTags: []
         showTags: true
+        focusOnHover: true
         enableRadial: true
     layout:
       position: right
