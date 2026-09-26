@@ -70,6 +70,9 @@ function getComponentResources(ctx: BuildCtx): ComponentResources {
       const graphVisibleEdges = graphSafeScript.replace(
         'te=h(Y.getPropertyValue("--gray").trim(),"#d4d4d4")',
         "te=0x888888",
+      ).replace(
+        "function Ve(){for(var i=0;i<z.length;i++){var l=z[i],F=1;_u!==null&&(F=l.active?1:.2),l.alpha=F,l.color=l.active?ee:te}}",
+        "function Ve(){for(var i=0;i<z.length;i++){var l=z[i];l.alpha=1,l.color=ee}}",
       )
       componentResources.afterDOMLoaded.add(graphVisibleEdges)
     }
