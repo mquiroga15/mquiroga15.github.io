@@ -1,0 +1,1 @@
+![[Galería.base|Registro de fotografías]]

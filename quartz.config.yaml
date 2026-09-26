@@ -286,6 +286,7 @@ plugins:
         - created
         - modified
         - published
+        - socialImage
       hidePropertiesView: false
       delimiters: ---
       language: yaml

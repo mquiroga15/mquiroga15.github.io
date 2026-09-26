@@ -1,0 +1,14 @@
+filters:
+  or:
+    - file.folder == "Fotografía/Fotos"
+    - file.folder == "content/Fotografía/Fotos"
+views:
+  - type: cards
+    name: Todas
+    image: note.cover
+  - type: cards
+    name: Cielo azul
+    filters:
+      and:
+        - collections.contains("Cielo azul")
+    image: note.cover
