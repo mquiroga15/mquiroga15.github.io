@@ -67,7 +67,11 @@ function getComponentResources(ctx: BuildCtx): ComponentResources {
             'lu.eventMode="none",lu.anchor.set(.5,1.2)',
           )
         : a
-      componentResources.afterDOMLoaded.add(graphSafeScript)
+      const graphVisibleEdges = graphSafeScript.replace(
+        'te=h(Y.getPropertyValue("--gray").trim(),"#d4d4d4")',
+        "te=0x888888",
+      )
+      componentResources.afterDOMLoaded.add(graphVisibleEdges)
     }
   }
 
