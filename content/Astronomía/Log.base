@@ -42,3 +42,20 @@ views:
       - type
       - focal_length_mm
       - afov
+  - type: table
+    name: Desfío Messier
+    filters:
+      and:
+        - file.hasTag("desfio-messier")
+        - or:
+            - file.folder == "Astronomía/Observaciones"
+            - file.folder == "content/Astronomía/Observaciones"
+    order:
+      - file.name
+      - object
+      - location
+      - telescope
+      - eyepiece
+      - magnification
+      - fov_arcmin
+    sort: []
