@@ -12,3 +12,9 @@ views:
       and:
         - collections.contains("Cielo azul")
     image: note.cover
+  - type: cards
+    name: Pájaros
+    filters:
+      and:
+        - collections.contains("Pájaros")
+    image: note.cover
